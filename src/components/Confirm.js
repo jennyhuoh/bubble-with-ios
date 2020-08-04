@@ -12,16 +12,16 @@ const Confirm = ({ title, visible, onAccept, onDecline }) => {
     >
       <View style={styles.containerStyle}>
         <Card title={title}>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row"}}>
             <Button
               title="Yes"
-              buttonStyle={{ backgroundColor: "#7BD500", width: 100,}}
+              buttonStyle={{ backgroundColor: "#29AF95", width: 100,}}
               containerStyle={{marginRight: 30}}
               onPress={onAccept}
             />
             <Button
               title="No"
-              buttonStyle={{ backgroundColor: "#D10036", width: 100, }}
+              buttonStyle={{ backgroundColor: "#BC4040", width: 100, }}
               onPress={onDecline}
             />
           </View>
@@ -37,6 +37,8 @@ const styles = StyleSheet.create({
     position: "relative",
     flex: 1,
     justifyContent: "center",
+    alignContent:'center',
+    alignItems:'center'
   },
 });
 

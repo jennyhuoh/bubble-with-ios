@@ -21,7 +21,7 @@ function Bubblesolved(){
                 transparent={true}
                 visible={modalvisible}
                 >
-                <View style={{backgroundColor: 'rgba(0,0,0,0.5)', position: 'absolute', width: 375,height: 815}}>
+                <View style={{backgroundColor: 'rgba(0,0,0,0.5)', position: 'absolute', width: 415,height: 815}}>
                     <View style={{backgroundColor: '#FAFAFA', width: 330, height: 400, marginLeft:22, marginTop:150}}>
                     {/* header */}
                         <View style={{backgroundColor:'#33918A', height:70, width: 330, flexDirection:'row'}}>
@@ -37,8 +37,8 @@ function Bubblesolved(){
                     {/* body */}
                     <View style={{justifyContent:'center', alignItems:'center'}}>
                         {/* 名稱 */}
-                        <View style={{backgroundColor:'#D5EDF8', width:126, height:48, marginTop:37}}>
-                            <Text style={{textAlign:'center', lineHeight:48, color:'#393939', fontSize:17}}>{messages[0]}</Text>
+                        <View style={{backgroundColor:'#D5EDF8', minWidth:126, height:48, marginTop:37}}>
+                            <Text style={{textAlign:'center', lineHeight:48, color:'#393939', fontSize:17, backgroundColor:'#D5EDF8', height:48, paddingLeft:5, paddingRight:5}}>{messages[0]}</Text>
                         </View>
                         {/* 連接線 */}
                         {/* <View style={{flexDirection:'row'}}>
@@ -48,13 +48,13 @@ function Bubblesolved(){
                         </View> */}
                         <View style={{marginTop:4}}><Image source={require('../img/img_solveproblem_straight.png')}/></View>
                         {/* 2: 原因*/}
-                        <View style={{backgroundColor:'#D5EDF8', width:126, height:48, marginTop:4}}>
-                            <Text style={{textAlign:'center', lineHeight:48, color:'#393939', fontSize:17}}>{messages[1]}</Text>
+                        <View style={{backgroundColor:'#D5EDF8', height:48, marginTop:4, minWidth:126}}>
+                            <Text style={{textAlign:'center', lineHeight:48, color:'#393939', fontSize:17, backgroundColor:'#D5EDF8', height:48}}>{messages[1]}</Text>
                         </View>
                         <View style={{marginTop:4}}><Image source={require('../img/img_solveproblem_straight.png')}/></View>
                         {/* 2: 原因*/}
-                        <View style={{backgroundColor:'#D5EDF8', width:126, height:48, marginTop:4}}>
-                            <Text style={{textAlign:'center', lineHeight:48, color:'#393939', fontSize:17}}>{messages[2]}</Text>
+                        <View style={{backgroundColor:'#D5EDF8', minWidth:126, height:48, marginTop:4}}>
+                            <Text style={{textAlign:'center', lineHeight:48, color:'#393939', fontSize:17, backgroundColor:'#D5EDF8', height:48}}>{messages[2]}</Text>
                         </View>
 
                     </View>
